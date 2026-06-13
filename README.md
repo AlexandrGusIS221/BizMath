@@ -1,75 +1,43 @@
-# Nuxt Minimal Starter
+# BizMath
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> Калькулятор амортизации и ликвидности для малого бизнеса
 
-## Setup
+![Версия](https://img.shields.io/badge/version-1.0.0-blue)
+![Nuxt](https://img.shields.io/badge/Nuxt.js-3.x-brightgreen)
+![Лицензия](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Make sure to install dependencies:
+## О проекте
+
+BizMath автоматизирует расчёты трёх методов амортизации (линейный, уменьшаемого остатка, сумма чисел лет) и трёх коэффициентов ликвидности (текущий, быстрый, абсолютный). Создан для малых предприятий и бухгалтеров, которым нужны быстрые и точные расчёты без Excel и 1С.
+
+**Демо:** [ссылка, если задеплоили]
+
+## Основные функции
+
+- 📊 Расчёт амортизации с таблицей и графиком
+- 📈 Три коэффициента ликвидности с цветовой индикацией нормы
+- 💾 Сохранение, редактирование и удаление активов в базе данных
+- 📱 Адаптивный дизайн (Bootstrap 5)
+
+## Технологии
+
+- **Frontend:** Nuxt.js (Vue 3), Bootstrap 5, Chart.js, dayjs, axios
+- **Backend:** Nuxt server routes, MongoDB + Mongoose
+- **Деплой:** Vercel + MongoDB Atlas
+
+## Быстрый старт
 
 ```bash
-# npm
+# Клонировать репозиторий
+git clone https://github.com/ваш-аккаунт/bizmath.git
+cd bizmath
+
+# Установить зависимости
 npm install
 
-# pnpm
-pnpm install
+# Создать файл .env и добавить MONGODB_URI
+echo "MONGODB_URI=mongodb+srv://..." > .env
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Запустить в режиме разработки
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+>>>>>>> a7cea863658221403a7e0de04991f84c6e8fccf1
