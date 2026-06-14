@@ -10,31 +10,31 @@
 ## Этап 0. Подготовка окружения и создание проекта
 **Цель:** развернуть Nuxt 3 проект с нужными пакетами.
 
-- [ ] 0.1. Установлен Node.js (версия 18 или выше)
-- [ ] 0.2. Выполнена команда `npx nuxi@latest init bizmath`
-- [ ] 0.3. Переход в папку `bizmath` и `npm install`
-- [ ] 0.4. Установлены пакеты:  
+- [x] 0.1. Установлен Node.js (версия 18 или выше)
+- [x] 0.2. Выполнена команда `npx nuxi@latest init bizmath`
+- [x] 0.3. Переход в папку `bizmath` и `npm install`
+- [x] 0.4. Установлены пакеты:  
   `npm install bootstrap @popperjs/core axios dayjs chart.js vue-chartjs mongoose`
-- [ ] 0.5. Создан файл `.env` с переменной `MONGODB_URI=...`
-- [ ] 0.6. `.env` добавлен в `.gitignore`
-- [ ] 0.7. Проект запускается без ошибок: `npm run dev`
+- [x] 0.5. Создан файл `.env` с переменной `MONGODB_URI=...`
+- [x] 0.6. `.env` добавлен в `.gitignore`
+- [x] 0.7. Проект запускается без ошибок: `npm run dev`
 
 ---
 
 ## Этап 1. Настройка Bootstrap, favicon, базовые файлы
-- [ ] 1.1. В `nuxt.config.ts` подключён CSS Bootstrap
-- [ ] 1.2. Создан `plugins/bootstrap.client.js` с импортом `bootstrap/dist/js/bootstrap.bundle.min.js`
-- [ ] 1.3. В `nuxt.config.ts` в `app.head.link` добавлен favicon (файл `favicon.ico` в `public/`)
-- [ ] 1.4. Подключены Bootstrap Icons (через CDN в `nuxt.config.ts` или локально)
-- [ ] 1.5. Создан плагин `plugins/dayjs.js` для глобального использования `$dayjs` (опционально)
-- [ ] 1.6. Создана папка `server/` со структурой (модели, API, плагины)
+- [x] 1.1. В `nuxt.config.ts` подключён CSS Bootstrap
+- [x] 1.2. Создан `plugins/bootstrap.client.js` с импортом `bootstrap/dist/js/bootstrap.bundle.min.js`
+- [x] 1.3. В `nuxt.config.ts` в `app.head.link` добавлен favicon (файл `favicon.ico` в `public/`)
+- [x] 1.4. Подключены Bootstrap Icons (через CDN в `nuxt.config.ts` или локально)
+- [x] 1.5. Создан плагин `plugins/dayjs.js` для глобального использования `$dayjs` (опционально)
+- [x] 1.6. Создана папка `server/` со структурой (модели, API, плагины)
 
 ---
 
 ## Этап 2. Вёрстка страниц (чистый UI без логики)
 
 ### 2.1. Компонент навигации
-- [ ] 2.1.1. Создан `components/NavBar.vue`
+- [x] 2.1.1. Создан `components/NavBar.vue`
 - [ ] 2.1.2. В шапке есть ссылки: Главная, Амортизация, Ликвидность, Активы
 - [ ] 2.1.3. Ссылки реализованы через `<NuxtLink>`
 
